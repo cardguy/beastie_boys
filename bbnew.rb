@@ -28,7 +28,7 @@ class ArtistAlbums
 
   def year(y)
     if list.key?(y)
-    puts list.assoc(y)
+      puts list.assoc(y)
     else false
    puts "no album released that year."
     end
