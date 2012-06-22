@@ -4,7 +4,7 @@ require("./bbnew.rb")
 
 loop do
   $stdout.write("'\n You're looking for?: all albums, first album,
- last album, total albums, a specific year (enter "year"), missing years, next, or quit?")
+ last album, total albums, a specific year (enter \"year\"), missing years, next, or quit?")
   answer = $stdin.gets.chomp
   break if answer == "quit"
 
