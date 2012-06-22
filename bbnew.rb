@@ -4,7 +4,7 @@ class ArtistAlbums
   end
 
   def list
-    @list = {
+    @list ||= {
      "1986" => "Licensed to Ill",
      "1989" => "Paul's Boutique",
      "1992" => "Check Your Head",
@@ -21,9 +21,18 @@ class ArtistAlbums
     list.values
   end
 
-  def year
-    list.keys
- end
+  def sort
+    list.sort
+
+  end
+
+  def year(y)
+    if list.key?(y)
+    puts list.assoc(y)
+    else false
+   puts "no album released that year."
+    end
+    end
 
   def first
     list.values.first
